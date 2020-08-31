@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/public/css/fullpost.css"><br><br><br>
+<div class="page"><%= post.title%>
+    <h6>
+        <a href=" /public/<%= post.name%>" target="_blank">Download file</a>
+    </h6>
+    <!--  <div class="category"> CATEGORY </div>  -->
+    <img class="img" src="/public/<%= post.name%>" alt="No file preview" onerror="
+        this.onerror=null;this.src='https://i.imgur.com/5r0TvgW.jpg' ;">
+    <!--  
+        <img class="img2" src=https://yoldaolmak.com/wp-content/uploads/2017/10/Kapadokya-Nasil-Gidilir-341x400.jpg
+            width="230" height="350" alt=" balon"> -->
+
+    <div class="clear-fix" style="padding-top: 40px;">
+        <h6><%- post.content %></h6>
+
+    </div>
+</div>
+<hr>
+<%- include('partials/footer') %>
